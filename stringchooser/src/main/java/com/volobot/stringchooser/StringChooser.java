@@ -26,10 +26,12 @@ public class StringChooser extends RecyclerView {
     private int notSelectedColor;
     private int notSelectedSize ;
     private int selectedValue;
-    float firstItemHeightPicker;
-    int allPixelsPicker;
-    int finalHeightPicker;
-    float itemHeightDate;
+    private float firstItemHeightPicker;
+    private int allPixelsPicker;
+    private int finalHeightPicker;
+    private float itemHeightDate;
+
+    private float notSelectedOpacity;
 
     float paddingPicker;
     private StringChooserAdapter stringChooserAdapter;
@@ -48,6 +50,8 @@ public class StringChooser extends RecyclerView {
                 getResources().getColor(android.R.color.darker_gray));
         notSelectedSize= typedArray.getDimensionPixelSize(R.styleable.StringChooser_notSelectedSize,
                 12);
+        notSelectedOpacity = typedArray.getFloat(R.styleable.StringChooser_notSelectedOpacity,
+                1.0f);
         typedArray.recycle();
         Log.d(TAG,"selected Size"+selectedSize);
     }
@@ -97,7 +101,9 @@ public class StringChooser extends RecyclerView {
                         selectedColor,
                         selectedSize,
                         notSelectedColor,
-                        notSelectedSize
+                        notSelectedSize,
+                        notSelectedOpacity
+
                 );
                 setAdapter(stringChooserAdapter);
                 return true;

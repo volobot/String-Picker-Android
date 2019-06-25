@@ -24,14 +24,16 @@ public class StringChooserAdapter extends RecyclerView.Adapter<RecyclerView.View
     private int selectedColor;
     private int selectedSize;
     private int notSelectedColor;
-    private int notSelectedSize ;
+    private int notSelectedSize;
+    private float notSelectedOpacity;
 
     public StringChooserAdapter(List<String> strings,
                                 int endHeight,
                                 int selectedColor,
                                 int selectedSize,
                                 int notSelectedColor,
-                                int notSelectedSize) {
+                                int notSelectedSize,
+                                float notSelectedOpacity) {
         this.strings = strings;
         strings.add(0, "");
         strings.add("");
@@ -40,6 +42,7 @@ public class StringChooserAdapter extends RecyclerView.Adapter<RecyclerView.View
         this.endHeight = endHeight;
         this.notSelectedColor=notSelectedColor;
         this.notSelectedSize=notSelectedSize;
+        this.notSelectedOpacity = notSelectedOpacity;
 
         Log.d(TAG,"const "+selectedSize);
 
@@ -76,9 +79,11 @@ public class StringChooserAdapter extends RecyclerView.Adapter<RecyclerView.View
             if (position == selectedItem) {
                 ((StringChooserView) viewHolder).title_view.setTextSize(TypedValue.COMPLEX_UNIT_PX,selectedSize);
                 ((StringChooserView) viewHolder).title_view.setTextColor(selectedColor);
+                ((StringChooserView) viewHolder).title_view.setAlpha(1.0f);
             } else {
                 ((StringChooserView) viewHolder).title_view.setTextSize(TypedValue.COMPLEX_UNIT_PX,notSelectedSize);
                 ((StringChooserView) viewHolder).title_view.setTextColor(notSelectedColor);
+                ((StringChooserView) viewHolder).title_view.setAlpha(notSelectedOpacity);
             }
         }
     }

@@ -5,5 +5,6 @@
         <attr name="selectedSize" format="dimension|reference" />
         <attr name="notSelectedSize" format="dimension|reference" />
         <attr name="notSelectedColor" format="color|reference" />
+        <attr name="notSelectedOpacity" format="float" />
     </declare-styleable>
 </resources>

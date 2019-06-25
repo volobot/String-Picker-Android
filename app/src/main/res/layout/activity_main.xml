@@ -8,12 +8,13 @@
 
     <com.volobot.stringchooser.StringChooser
         android:id="@+id/stringChooser"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:selectedColor="@android:color/holo_blue_dark"
         app:notSelectedColor="@android:color/holo_green_light"
         app:selectedSize="32dp"
         app:notSelectedSize="20dp"
+        app:notSelectedOpacity="0.3"
         >
 
 
