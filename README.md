@@ -20,7 +20,7 @@ dependencies {
 
 <img title="Example main color in a dialog" src="https://raw.githubusercontent.com/volobot-admin/String-Picker-Android/master/screenshot-1561442914285.jpg?raw=true" width="400" />
 
-#How to implement
+# How to implement
 ```
 <com.volobot.stringchooser.StringChooser
         android:id="@+id/stringChooser"
