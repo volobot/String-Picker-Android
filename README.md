@@ -1,6 +1,6 @@
 ### Stylise String Chooser
 
-Add it in your root build.gradle at the end of repositories:
+## Add it in your root build.gradle at the end of repositories:
 
 ```
 allprojects {
@@ -11,7 +11,7 @@ allprojects {
 	}
 ```
 
-Add the dependency
+## Add the dependency
 ```
 dependencies {
 	        implementation 'com.github.volobot-admin:String-Picker-Android:v1.3'
@@ -20,7 +20,7 @@ dependencies {
 
 <img title="Example main color in a dialog" src="https://raw.githubusercontent.com/volobot-admin/String-Picker-Android/master/screenshot-1561442914285.jpg?raw=true" width="400" />
 
-# How to implement
+## How to implement
 ```
 <com.volobot.stringchooser.StringChooser
         android:id="@+id/stringChooser"
