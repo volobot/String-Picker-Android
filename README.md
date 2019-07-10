@@ -19,4 +19,4 @@ dependencies {
 	}
 ```
 
-<img title="Example main color in a dialog" src="https://github.com/volobot-admin/flutter-two-lette-icon/blob/master/Screenshot_1561281887.png?raw=true" width="400" />
+<img title="Example main color in a dialog" src="https://raw.githubusercontent.com/volobot-admin/String-Picker-Android/master/screenshot-1561442914285.jpg?raw=true" width="400" />
