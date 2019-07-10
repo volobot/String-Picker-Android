@@ -1,4 +1,4 @@
-***Stylise String Chooser***
+### Stylise String Chooser
 
 Add it in your root build.gradle at the end of repositories:
 
